@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти - Studia.photo</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div id="root">
+        <div class="app-container fade-in">
+            <h1 class="typing-effect">Контакти</h1>
+            
+            <div class="button-container">
+                <button onclick="window.location.href='/'">Головна</button>
+                <button onclick="window.location.href='/services'">Послуги</button>
+                <button onclick="window.location.href='/contact'" class="active">Контакти</button>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Зв'яжіться з нами</h2>
+                <p style="margin-top: 1rem;">
+                    Ми завжди раді відповісти на ваші запитання та обговорити ваші ідеї.
+                    Використовуйте будь-який зручний для вас спосіб зв'язку:
+                </p>
+                
+                <div style="margin-top: 2rem;">
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 30px; text-align: center; margin-right: 10px;">📞</div>
+                        <div>Телефон: +380 (44) 123-45-67</div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 30px; text-align: center; margin-right: 10px;">✉️</div>
+                        <div>Email: info@studia.photo</div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 30px; text-align: center; margin-right: 10px;">🏢</div>
+                        <div>Адреса: м. Київ, вул. Хрещатик, 1</div>
+                    </div>
+                    
+                    <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                        <div style="width: 30px; text-align: center; margin-right: 10px;">⏰</div>
+                        <div>Години роботи: Пн-Пт, 9:00 - 18:00</div>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem; margin-bottom: 2rem;">
+                    <h3>Соціальні мережі</h3>
+                    <div style="display: flex; justify-content: center; gap: 20px; margin-top: 1rem;">
+                        <a href="#" style="color: white; text-decoration: none; padding: 10px 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">Instagram</a>
+                        <a href="#" style="color: white; text-decoration: none; padding: 10px 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">Facebook</a>
+                        <a href="#" style="color: white; text-decoration: none; padding: 10px 15px; background: rgba(255,255,255,0.1); border-radius: 5px;">Telegram</a>
+                    </div>
+                </div>
+                
+                <div style="margin-top: 2rem;">
+                    <h3>Надіслати запит</h3>
+                    <form style="margin-top: 1rem; text-align: left;">
+                        <div style="margin-bottom: 1rem;">
+                            <label for="name" style="display: block; margin-bottom: 0.5rem;">Ваше ім'я:</label>
+                            <input type="text" id="name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="email" style="display: block; margin-bottom: 0.5rem;">Email:</label>
+                            <input type="email" id="email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white;">
+                        </div>
+                        
+                        <div style="margin-bottom: 1rem;">
+                            <label for="message" style="display: block; margin-bottom: 0.5rem;">Повідомлення:</label>
+                            <textarea id="message" rows="5" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white;"></textarea>
+                        </div>
+                        
+                        <button type="button" style="background: #5a67d8; color: white; border: none; padding: 0.8rem 1.5rem; border-radius: 50px; font-size: 1rem; cursor: pointer; transition: all 0.2s ease; display: inline-block; margin-top: 0.5rem;">Надіслати</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
