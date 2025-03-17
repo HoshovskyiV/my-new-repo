@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Помічник - Studia.photo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.2.0/dist/index.min.js"></script>
+</head>
+<body>
+    <div id="root">
+        <div class="app-container fade-in">
+            <h1 class="typing-effect">AI Помічник</h1>
+            
+            <div class="button-container">
+                <button onclick="window.location.href='/'">Головна</button>
+                <button onclick="window.location.href='/services'">Послуги</button>
+                <button onclick="window.location.href='/contact'">Контакти</button>
+                <button onclick="window.location.href='/chatbot'" class="active">AI Помічник</button>
+            </div>
+            
+            <div class="card fade-in">
+                <h2>Поспілкуйтесь з нашим AI помічником</h2>
+                <p>Цей чатбот використовує штучний інтелект Google Gemini для відповідей на ваші запитання.</p>
+                
+                <div class="chatbot-container">
+                    <div class="chat-area" id="chatArea">
+                        <div class="message bot">
+                            <div class="message-content">Привіт! Я AI помічник Studia.photo. Чим можу допомогти?</div>
+                        </div>
+                    </div>
+                    <div class="input-area">
+                        <textarea id="userInput" placeholder="Напишіть ваше повідомлення..." rows="3"></textarea>
+                        <button id="sendButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="chatbot.js"></script>
+</body>
+</html>
