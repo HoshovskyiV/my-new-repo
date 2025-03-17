@@ -4,7 +4,13 @@ function App() {
 
     return (
         <div className="app-container fade-in">
-            <h1 className="typing-effect">Тестовий React Сайт з Ефектами</h1>
+            <h1 className="typing-effect">Studia.photo - Тестовий React Сайт</h1>
+            
+            <div className="button-container" style={{ marginBottom: '1.5rem' }}>
+                <button onClick={() => window.location.href='/'} className="active">Головна</button>
+                <button onClick={() => window.location.href='/services'}>Послуги</button>
+                <button onClick={() => window.location.href='/contact'}>Контакти</button>
+            </div>
             
             <div className="button-container">
                 <button onClick={() => setActiveSection('intro')}>Вступ</button>
@@ -35,7 +41,7 @@ function IntroSection() {
     
     return (
         <div className={`card ${isVisible ? 'fade-in' : ''}`}>
-            <h2>Вітаємо у демонстрації React!</h2>
+            <h2>Вітаємо на сайті Studia.photo!</h2>
             <p style={{ marginTop: '1rem' }}>
                 Цей сайт демонструє різні ефекти та анімації, які можна створити за допомогою React.
                 Виберіть один з розділів вище, щоб побачити різні ефекти в дії.
@@ -43,6 +49,12 @@ function IntroSection() {
             <p style={{ marginTop: '1rem' }}>
                 Усі компоненти використовують React хуки, такі як useState і useEffect,
                 для керування станом та життєвим циклом компонентів.
+            </p>
+            <p style={{ marginTop: '1rem' }}>
+                Відвідайте сторінку <a href="/services" style={{ color: '#5a67d8', textDecoration: 'underline' }}>послуг</a>, 
+                щоб дізнатися більше про те, що ми пропонуємо, або сторінку 
+                <a href="/contact" style={{ color: '#5a67d8', textDecoration: 'underline' }}> контактів</a>, 
+                щоб зв'язатися з нами.
             </p>
         </div>
     );
