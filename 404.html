@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сторінку не знайдено - Studia.photo</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        .error-container {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .error-image {
+            max-width: 300px;
+            margin: 0 auto 2rem;
+        }
+        
+        .error-code {
+            font-size: 5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+        
+        .back-button {
+            margin-top: 2rem;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <div class="app-container fade-in">
+            <h1 class="typing-effect">Studia.photo</h1>
+            
+            <div class="card fade-in">
+                <div class="error-container">
+                    <div class="error-code">404</div>
+                    <h2>Сторінку не знайдено</h2>
+                    <p>Вибачте, сторінка, яку ви шукаєте, не існує або була переміщена.</p>
+                    <div class="button-container">
+                        <a href="/" class="back-button">
+                            <button>Повернутися на головну</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Функція для перенаправлення на правильний шлях для певних URL
+        function redirectToCorrectPath() {
+            const currentPath = window.location.pathname;
+            
+            const correctPaths = {
+                '/chatbot': '/chatbot/',
+                '/services': '/services/',
+                '/contact': '/contact/'
+            };
+            
+            if (correctPaths[currentPath]) {
+                window.location.href = correctPaths[currentPath];
+            }
+        }
+        
+        // Викликати функцію при завантаженні сторінки
+        window.addEventListener('DOMContentLoaded', redirectToCorrectPath);
+    </script>
+</body>
+</html>
