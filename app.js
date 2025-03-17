@@ -10,6 +10,7 @@ function App() {
                 <button onClick={() => window.location.href='/'} className="active">Головна</button>
                 <button onClick={() => window.location.href='/services'}>Послуги</button>
                 <button onClick={() => window.location.href='/contact'}>Контакти</button>
+                <button onClick={() => window.location.href='/chatbot'}>AI Помічник</button>
             </div>
             
             <div className="button-container">
@@ -55,6 +56,10 @@ function IntroSection() {
                 щоб дізнатися більше про те, що ми пропонуємо, або сторінку 
                 <a href="/contact" style={{ color: '#5a67d8', textDecoration: 'underline' }}> контактів</a>, 
                 щоб зв'язатися з нами.
+            </p>
+            <p style={{ marginTop: '1rem' }}>
+                <a href="/chatbot" style={{ color: '#5a67d8', textDecoration: 'underline' }}>Спробуйте наш AI помічник</a> на основі 
+                Google Gemini - він відповість на ваші запитання про нашу студію!
             </p>
         </div>
     );
